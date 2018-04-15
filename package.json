@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "desenvolvimento web",
+  "main": "serve",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ivan santos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemailer": "2.5.0"
+  }
+}
