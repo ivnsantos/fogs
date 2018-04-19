@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -8,6 +9,7 @@
 
 	<title>Fogs</title>
 
+	<link rel="icon" type="image/png" href="img/foggs.ico">
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
@@ -252,7 +254,9 @@
 					<h4 class="title">A fogs é bem flexível podemos ajustar alguns planos para atender o que você relmente precisa. </h4>
 				</div>
 				<!-- pricing -->
-				<div class="col-sm-4">
+				<div class="col-sm-4" style="
+				z-index: 0;
+			">
 					<div class="pricing">
 						<div class="price-head">
 							<span class="price-title">Prata 3</span>
@@ -286,7 +290,9 @@
 				<!-- /pricing -->
 
 				<!-- pricing -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 " style="
+				z-index: 0;
+			">
 					<div class="pricing">
 						<div class="price-head">
 							<span class="price-title">Prata 2</span>
@@ -320,7 +326,9 @@
 				<!-- /pricing -->
 
 				<!-- pricing -->
-				<div class="col-sm-4">
+				<div class="col-sm-4" style="
+				z-index: 0;
+			">
 					<div class="pricing">
 						<div class="price-head">
 							<span class="price-title">Diamante 3</span>
@@ -404,7 +412,7 @@
 				<div class="col-md-12 col-md-offset-2">
 					<div>
 					<!-- Facebook JS -->
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFogs-571979016534673%2F&tabs=timeline&width=400&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffogsdigital%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 					<!-- FAcebook JS -->
 				</div>
 				</div>
@@ -494,19 +502,40 @@
 	<!-- /Preloader -->
 
 	<!-- Assitente-->
-	<section style="position: fixed;bottom: 0;z-index: 999999999999999999999999;right: 0px; display: block;">
-		<div id="fox" style="width: 267px;background: #000000ba;padding: 6px;color: #ffff00;padding-left: 6px;cursor: pointer;height: 44px;">
-			<div style="background-image: url('./img/foggs.png');width: 32px;height: 31px;background-size: 100%;border: none;background-repeat: no-repeat;position: absolute;left: 15px;"></div>
-			<span style="margin-left: 71px;position: absolute;top: 10px;">Assistente Virtual </span>
+	<div id="fox" style="cursor: pointer;z-index:9999999999999999999999999999">
+		<div style="background-image: url('./img/woman.svg');width: 60px;height: 57px;background-size: 100%;border: none;background-repeat: no-repeat;position: fixed;right: 17px;bottom: 31px;"></div>
+		<div style="
+		position: fixed;
+		bottom: 83px;
+		background: #f6f7f9;
+		font-size: 16px;
+		color: black;
+		right: 60px;
+		padding: 6px;
+		border-radius: 14px;
+		box-shadow: 2px 4px;
+	">Oi, Como vai ?</div>
+	</div>
+	<section style="position: fixed;bottom: 0;z-index: 999999999999999999999999;right: 0px;display: block;border: solid 2px black;">
+		<div id="fox1" style="display: none; width: 267px; background: rgba(0, 0, 0, 0.73); padding: 6px; color: rgb(255, 255, 0); cursor: pointer; height: 44px;">
+			<span style="margin-left: 31px;position: absolute;top: 10px;">Assistente Virtual </span> <p style="
+			width: 20px;
+			height: 18px;
+			font-size: 47px;
+			position: absolute;
+			top: 28px;
+			right: 19px;
+			transform: rotate(180deg);
+		">^</p>
 		</div>
-		<div id="chat" style="display: block;height: 224px;background: #1b263e;">
+		<div id="chat" style="display: none; height: 224px; background: rgb(248, 250, 255);">
 	<div id="chatresposta">
 	
 <div style="
 display: inline-flex;
 margin-top: 13px;
 ">
-<div style="background-image: url('./img/foggs.png');width: 36px;height: 34px;background-size: 100%;border: none;background-repeat: no-repeat;position: relative;left: 15px;"></div>
+<div style="background-image: url('./img/woman.svg');width: 48px;height: 49px;background-size: 100%;border: none;background-repeat: no-repeat;position: relative;left: 15px;"></div>
 	<div style="
 	color: #000000;
 	background: #ffffff;
@@ -517,7 +546,7 @@ margin-top: 13px;
 	box-shadow: 6px 3px 14px grey;
 	border: solid 2px #dcdbd1;
 	margin-left: 27px;
-	">Você tem alguma duvida ?</div>
+	">Desculpe no momento estou em treinamento... </div>
 	</div>
 		
 	</div>
@@ -525,10 +554,11 @@ margin-top: 13px;
 	bottom: 0;
 	position: absolute;
 	margin: 0px !important;
+	display: flex;
 ">
 	
-			<input type="text" style="width: 178px;background: black;color: white;" placeholder="Escreva aqui">
-			<button type="button" style="height: 41px;">Enviar</button>
+			<input type="text" style="width: 199px;background: black;color: white;position: relative;top: 3px;" placeholder="Escreva aqui">
+			<button type="button" style="height: 41px;width: 68px;position: relative;top: 3px;">Enviar</button>
 		
 		</form></div>
 		
@@ -554,4 +584,3 @@ margin-top: 13px;
 
 </body>
 
-</html>
